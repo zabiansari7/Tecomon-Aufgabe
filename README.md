@@ -1,6 +1,6 @@
 # Weather Widgets
 
-Small full-stack app to save city “widgets” and show current weather.  
+full-stack app to save city “widgets” and show current weather.  
 Stack: **Next.js (React)** · **Express/Node** · **MongoDB** · **Redis (cache)** · **Open-Meteo**.
 
 ---
