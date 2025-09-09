@@ -129,21 +129,21 @@ Content-Type: application/json
 
 ```txt
 .
-├── backend/
-│   ├── server.js            ← Express entry (imports from ./src)
-│   └── src/
-│       ├── controllers/
-│       ├── models/
-│       ├── routes/
-│       ├── services/        ← weather service (Open-Meteo) + caching
-│       ├── cache/           ← Redis client
-│       └── middleware | utils | config (if present)
-└── frontend/
-    └── src/
-        ├── pages/
-        ├── components/
-        ├── utils/
-        └── styles/
+├─ backend/
+│  ├─ server.js
+│  └─ src/
+│     ├─ cache/redisClient.js
+│     ├─ controllers/widgetController.js
+│     ├─ models/widgets.js
+│     ├─ routes/widgetRoutes.js
+│     └─ services/weatherService.js
+└─ frontend/
+   └─ src/
+      ├─ pages/_app.js
+      ├─ pages/index.js
+      ├─ components/{WidgetCard.js,WidgetForm.js,WeatherIcon.js}
+      ├─ utils/{api.js,weather.js}
+      └─ styles/globals.css
 ```
 
 **Diagram**
